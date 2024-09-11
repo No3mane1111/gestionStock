@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+   font-family: 'Poppins', sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   outline: none;
+   border: none;
+   text-decoration: none;
+}
+
+.container, .form-container {
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+   padding-bottom: 60px;
+   background-image: url('photo\ sieges.jpg'); /* Remplacez par le chemin de votre image */
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   position: relative;
+   overflow: hidden;
+}
+
+
+
+.container .content {
+   text-align: center;
+   position: relative;
+   z-index: 1; /* Pour que le contenu soit au-dessus du logo */
+}
+
+.container .content h3 {
+   font-size: 30px;
+   color: #333;
+}
+
+.container .content h3 span {
+   background: crimson;
+   color: #fff;
+   border-radius: 5px;
+   padding: 0 15px;
+}
+
+.container .content h1 {
+   font-size: 50px;
+   color: #333;
+}
+
+.container .content h1 span {
+   color: crimson;
+}
+
+.container .content p {
+   font-size: 25px;
+   margin-bottom: 20px;
+}
+
+.container .content .btn {
+   display: inline-block;
+   padding: 10px 30px;
+   font-size: 20px;
+   background: #333;
+   color: #fff;
+   margin: 0 5px;
+   text-transform: capitalize;
+}
+
+.container .content .btn:hover {
+   background: crimson;
+}
+
+.form-container form {
+   padding: 20px;
+   border-radius: 8px; /* Augmenté pour arrondir les coins */
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre plus marquée */
+   background: rgba(255, 255, 255, 0.141); /* Couleur de fond plus claire */
+   text-align: center;
+   width: 500px;
+   transition: box-shadow 0.3s ease, background-color 0.3s ease;
+   /* Transition pour effet hover */
+}
+
+.form-container form:hover {
+   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Ombre plus marquée au survol */
+   background-color: #062a3b; /* Couleur de fond légèrement différente au survol */
+}
+
+.form-container form h3 {
+   font-size: 30px;
+   text-transform: uppercase;
+   margin-bottom: 10px;
+   color: #333;
+}
+
+.form-container form input,
+.form-container form select {
+   width: 100%;
+   padding: 10px 15px;
+   font-size: 17px;
+   margin: 8px 0;
+   background: #fff; /* Fond des champs de saisie */
+   border: 1px solid #ddd; /* Bordure légère */
+   border-radius: 5px;
+}
+
+.form-container form select option {
+   background: #fff;
+}
+
+.form-container form .form-btn {
+   background: #fbd0d9; /* Couleur de fond du bouton */
+   color: crimson; /* Couleur du texte du bouton */
+   text-transform: capitalize;
+   font-size: 20px;
+   cursor: pointer;
+}
+
+.form-container form .form-btn:hover {
+   background: crimson; /* Couleur de fond du bouton au survol */
+   color: #fff; /* Couleur du texte du bouton au survol */
+}
+
+.form-container form p {
+   margin-top: 10px;
+   font-size: 20px;
+   color: #333;
+}
+
+.form-container form p a {
+   color: crimson;
+}
+
+.form-container form .error-msg {
+   margin: 10px 0;
+   display: block;
+   background: crimson;
+   color: #fff;
+   border-radius: 5px;
+   font-size: 20px;
+   padding: 10px;
+}
+
+@keyframes rotate {
+   from {
+      transform: rotate(0deg);
+   }
+   to {
+      transform: rotate(360deg);
+   }
+}
